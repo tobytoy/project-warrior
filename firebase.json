@@ -1,0 +1,21 @@
+{
+  "hosting": {
+    "public": "out",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**",
+      "workspace/**"
+    ],
+    "rewrites": [
+      {
+        "source": "/products/**",
+        "destination": "/studio/light-shop/products/:splat"
+      },
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
